@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>newtableview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    lazy var tableview: UITableView = {
+        let tab = UITableView(frame: .zero, style: .grouped)
+        tab.separatorStyle = .none
+        tab.backgroundColor = UIColor.white
+        tab.showsVerticalScrollIndicator = false
+        tab.delegate = self
+        tab.dataSource = self
+        tab.allowsSelection = false
+        tab.mj_header = MJRefreshHeader(refreshingBlock: {[weak self] in
+            guard let self = self else { return }
+            self.lv_queryHistoryList(isPullDown: true)
+        })
+        tab.mj_footer = MJRefreshAutoFooter(refreshingBlock: {[weak self] in
+            guard let self = self else { return }
+            self.lv_queryHistoryList(isPullDown: false)
+        })
+        return tab
+    }()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>90BC0AB9-AF5C-4FC4-ABBC-FF597B3463B7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>newtableview</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

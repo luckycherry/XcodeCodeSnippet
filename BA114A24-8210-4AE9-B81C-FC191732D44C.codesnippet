@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>newscrollView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    private lazy var scrollView: UIScrollView = {
+        let scroll = UIScrollView()
+        scroll.delegate = self
+        scroll.isPagingEnabled = true // 分页滚动
+        scroll.showsHorizontalScrollIndicator = false // 隐藏水平滚动条
+        scroll.isDirectionalLockEnabled = true
+        scroll.bounces = false
+        scroll.contentInsetAdjustmentBehavior = .never
+        scroll.automaticallyAdjustsScrollIndicatorInsets = false
+        return scroll
+    }()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BA114A24-8210-4AE9-B81C-FC191732D44C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>newscrollView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

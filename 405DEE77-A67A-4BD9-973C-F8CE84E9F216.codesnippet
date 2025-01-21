@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>newLab</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var _lab: UILabel = {
+    let lab = UILabel()
+    lab.text = "----"
+    lab.textColor = SS_HEXCOLOR("#202122")
+    lab.font = UIFont(name: Manrope3_ExtraBold, size: SSWidthRatio(16))
+    return lab
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>405DEE77-A67A-4BD9-973C-F8CE84E9F216</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>ccnewviewLab</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ccnewviewLab</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
