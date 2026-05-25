@@ -1,5 +1,7 @@
 # setup_tools.sh 自动化注入脚本
 
+在终端项目根目录执行 ./setup_tools.sh
+
 # Xcode CodeSnippet
 Xcode 快捷代码片段 (一个文件对应一个片段)
 
