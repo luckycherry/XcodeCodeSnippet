@@ -1,5 +1,7 @@
-# XcodeCodeSnippet
-Xcode 快捷代码片段
+# setup_tools.sh 自动化注入脚本
+
+# Xcode CodeSnippet
+Xcode 快捷代码片段 (一个文件对应一个片段)
 
 目录在:
 ~/Library/Developer/Xcode/UserData/CodeSnippets/
@@ -8,5 +10,11 @@ Xcode 快捷代码片段
 rm -rf ~/Library/Caches/com.apple.dt.Xcode
 重新打开生效
 
-一个文件对应一个片段
+
+
+# Xcode Template
+目录在:
+~/Library/Developer/Xcode/Templates/File Templates/
+
+
 
