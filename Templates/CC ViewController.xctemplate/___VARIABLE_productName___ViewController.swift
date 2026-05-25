@@ -12,7 +12,7 @@ import RxCocoa
 import SnapKit
 
 
-class ___VARIABLE_productName___ViewController: UIViewController {
+class ___VARIABLE_productName___Controller: UIViewController {
     private let viewModel = ___VARIABLE_productName___ViewModel()
 
     override func viewDidLoad() {
@@ -25,7 +25,7 @@ class ___VARIABLE_productName___ViewController: UIViewController {
 }
 
 // MARK: - Bindings (数据流与事件流)
-extension ___VARIABLE_productName___ViewController {
+extension ___VARIABLE_productName___Controller {
     // MARK: Value -> UI
     private func bindValues() {
 
@@ -37,7 +37,7 @@ extension ___VARIABLE_productName___ViewController {
 }
 
 // MARK: - Layout (层级与约束)
-extension ___VARIABLE_productName___ViewController {
+extension ___VARIABLE_productName___Controller {
     // MARK: 层级与约束
     private func configSubviews() {
         setupSubviews()
