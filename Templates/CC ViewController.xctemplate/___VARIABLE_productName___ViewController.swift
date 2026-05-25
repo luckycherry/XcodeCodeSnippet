@@ -12,29 +12,25 @@ import RxCocoa
 import SnapKit
 
 
-class ___VARIABLE_productName___ViewController: BaseVC {
+class ___VARIABLE_productName___ViewController: UIViewController {
     private let viewModel = ___VARIABLE_productName___ViewModel()
 
-    // MARK: - UI Components (仅声明需要绑定/动态修改的控件)
-
-    // MARK: - Lifecycle
-    override func uiConfig() {
-        super.uiConfig()
+    override func viewDidLoad() {
+        super.viewDidLoad()
         configSubviews()
         bindValues()
         bindInteractions()
     }
 
-    // MARK: - Business
 }
 
 // MARK: - Bindings (数据流与事件流)
 extension ___VARIABLE_productName___ViewController {
-    /// ViewModel -> UI
+    // MARK: Value -> UI
     private func bindValues() {
 
     }
-    /// UI -> Action
+    // MARK: UI -> Action
     private func bindInteractions() {
 
     }
@@ -42,17 +38,20 @@ extension ___VARIABLE_productName___ViewController {
 
 // MARK: - Layout (层级与约束)
 extension ___VARIABLE_productName___ViewController {
+    // MARK: 层级与约束
     private func configSubviews() {
         setupSubviews()
         measureSubviews()
     }
-
+    // MARK: 层级
     private func setupSubviews() {
-        // 静态装饰性视图直接在这里创建为局部变量
-        // 需要绑定/动态修改的控件通过成员属性引用
+        let subViews: [UIView] = [
+            
+        ]
+        subViews.forEach { view.addSubview($0) }
     }
-
+    // MARK: 约束
     private func measureSubviews() {
-
+        
     }
 }
