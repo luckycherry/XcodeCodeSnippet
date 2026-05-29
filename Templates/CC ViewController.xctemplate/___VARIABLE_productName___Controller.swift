@@ -18,21 +18,25 @@ class ___VARIABLE_productName___Controller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configSubviews()
-        bindValues()
-        bindInteractions()
+        configAction()
     }
 
 }
 
 // MARK: - Bindings (数据流与事件流)
 extension ___VARIABLE_productName___Controller {
+    // MARK: 绑定数据和视图交互
+    private func configAction() {
+        bindValues()
+        bindInteractions()
+    }
     // MARK: Value -> UI
     private func bindValues() {
-
+        
     }
     // MARK: UI -> Action
     private func bindInteractions() {
-
+        
     }
 }
 
@@ -55,3 +59,5 @@ extension ___VARIABLE_productName___Controller {
         
     }
 }
+
+
