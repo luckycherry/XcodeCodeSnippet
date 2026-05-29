@@ -1,6 +1,9 @@
-# setup_tools.sh 自动化注入脚本
+# setup_tools.sh 自动化注入脚本(从仓库导进电脑)
 
-在终端项目根目录执行 ./setup_tools.sh
+在终端项目根目录执行  ./setup_tools.sh
+
+# update_repo.sh 从电脑导回仓库
+在终端项目根目录执行  ./update_repo.sh
 
 # Xcode CodeSnippet
 Xcode 快捷代码片段 (一个文件对应一个片段)

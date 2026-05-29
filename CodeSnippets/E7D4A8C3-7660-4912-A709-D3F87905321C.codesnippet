@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>newvc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>class &lt;#Name#&gt;ViewController: BaseVC {
+    
+    // private let viewModel = &lt;#ViewModel#&gt;()
+    
+    // MARK: - UI Components
+    lazy var &lt;#button#&gt;: UIButton = {
+        let btn = UIButton(type: .system)
+        btn.setTitle("&lt;#Title#&gt;", for: .normal)
+        return btn
+    }()
+    
+    // MARK: - Life Cycle
+    override func uiConfig() {
+        super.uiConfig()
+        
+        configSubviews()
+        bindValues()
+        bindInteractions()
+    }
+}
+
+// MARK: - Bindings
+extension &lt;#Name#&gt;ViewController {
+    
+    /// ViewModel -&gt; UI (数据流)
+    private func bindValues() {
+        // viewModel.$state.bind(to: ...).disposed(by: disposeBag)
+    }
+    
+    /// UI -&gt; Action (事件流)
+    private func bindInteractions() {
+        &lt;#button#&gt;.rx.tap
+            .subscribe(onNext: { [weak self] in
+                guard let self = self else { return }
+                // self.handleAction()
+            })
+            .disposed(by: disposeBag)
+    }
+}
+
+// MARK: - Layout
+extension &lt;#Name#&gt;ViewController {
+    private func configSubviews() {
+        setupSubviews()
+        measureSubviews()
+    }
+    
+    private func setupSubviews() {
+        [].forEach { view.addSubview($0) }
+    }
+    
+    private func measureSubviews() {
+        &lt;#button#&gt;.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E7D4A8C3-7660-4912-A709-D3F87905321C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>newvc</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

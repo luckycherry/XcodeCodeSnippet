@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>configAction</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: - Bindings (数据流与事件流)
+extension ___VARIABLE_productName___Controller {
+    // MARK: 绑定数据和视图交互
+    private func configAction() {
+        bindValues()
+        bindInteractions()
+    }
+    // MARK: Value -&gt; UI
+    private func bindValues() {
+
+    }
+    // MARK: UI -&gt; Action
+    private func bindInteractions() {
+
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4230CB53-014B-4F4A-865F-52F70E2926A5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>configAction</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
